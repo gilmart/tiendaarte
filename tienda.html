@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-md-5 g-3" id="fila">
 
-
+                
             </div>
         </div>
     </main>
@@ -50,12 +50,31 @@
 
                             <div class="col-8" id="descrip" >
                                 <h3 class="text-muted" id="descripcioninfo"></h3>
-                            </div>
-                        </div>
-                      
-                    </div>
 
+                                <div class="container">
+                                    <div class="row">
+                                        <!-- Elementos generados a partir del JSON -->
+                                        <main id="items" class="col-sm-4 row"></main>
+                                        <!-- Carrito -->
+                                        <div class="col-sm-2">
+                                            <!-- Elementos del carrito -->
+                                            <ul id="carrito" class="list-group"></ul>
+                                            <hr>
+                                            <!-- Precio total -->
+                                            <p class="text-left">Total: <span id="total"></span>&dollar;</p>
+                                            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                   
+                    </div>
                 </div>
+
+               
+                        
+                 
+                
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                   <button type="button" class="btn btn-warning">Añadir al carrito</button>

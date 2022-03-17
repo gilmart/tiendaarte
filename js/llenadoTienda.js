@@ -1,5 +1,4 @@
 export function pintarTienda(){
-
     let productosBD= [
 
         {nombre: "coolie", precio: 45000, descripcion: "Coolies personalizados para latas de cervezas", foto: "img/coolie1.png"},
@@ -14,7 +13,8 @@ export function pintarTienda(){
         {nombre: "coolie10", precio: 45000, descripcion: "Coolies personalizados para latas de cervezas", foto: "img/coolie1.png"},
     ]
     
-    //console.log(productosBD)
+
+        //console.log(productosBD)
     
     let fila=document.getElementById("fila")
     productosBD.forEach(function(producto){
@@ -49,23 +49,31 @@ export function pintarTienda(){
         descripcion.textContent=producto.descripcion
         descripcion.hidden=producto.descripcion
 
+        /*
+        let agregarArticulo=document.createElement("list")
+        agregarArticulo.classList.add("number")
+        agregarArticulo.textContent = "+"
+       // agregarArticulo.setAttribute("marcador")
+        //agregarArticulo.addEventListener("click")
+        */
         let boton=document.createElement("button")
         boton.setAttribute("type","button")
         boton.classList.add("btn","btn-warning","mx-4","mb-4")
         boton.textContent="ver producto"
 
-
+             
         tarjeta.appendChild(foto)
         tarjeta.appendChild(titulo)
         tarjeta.appendChild(precio)
         tarjeta.appendChild(descripcion)
+      //  tarjeta.appendChild(agregarArticulo)
         tarjeta.appendChild(boton)
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
 
-       
-       
+      
         
     })
 }
+
 
