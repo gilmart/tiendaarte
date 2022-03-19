@@ -138,8 +138,8 @@ a:hover, a:focus {
   display:flex;
   z-index: 1;
 
-  
   }
+  
   .productosTitulo{
     color: #1d6ce2;
     text-align: center;
@@ -147,8 +147,8 @@ a:hover, a:focus {
     text-shadow: 3px 2px 3px rgba(24, 23, 23, 0.514);
     font-family: "Source Sans Pro", sans-serif;
     font-size: 45px;
-  
   }
+  
   
   #contenedorProductos{
   width: 90%;
@@ -167,6 +167,7 @@ a:hover, a:focus {
     border-radius: 15px;
     text-align: start;
     box-shadow: 0px 4px 4px rgba(172, 172, 172, 0.25);
+    transition: background-color;
   }
   .container .swiper-slide img{
     display: block;
@@ -176,6 +177,8 @@ a:hover, a:focus {
      border-top-left-radius: 15px;
      border-top-right-radius: 15px;
  }
+
+
  .container .swiper-slide .card-description{
   padding:1rem 1rem;
 }
@@ -218,25 +221,6 @@ h1{
   margin-bottom: 1cm;
 
 }
-
-/* BANNER DE COLORES 
-
-.section-module{
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
-  font-family: Aller, sans-serif;
-  line-height: 1.2;
-  font-weight: 400;
-  color: #464646;
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
-  outline: 0;
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-}
-*/
 
 .section-module__row{
   -webkit-font-smoothing: antialiased;
@@ -284,7 +268,7 @@ h1{
   color: #ffffff;
 }
 
-.section__content-inner{
+.section__content-inner{ 
   margin: 0;
   outline: 0;
   box-sizing: border-box;
@@ -350,7 +334,7 @@ width: 100%;
 
 /* ACERCA DE */
 
-.u-padless-lr{
+.u-padless-lr {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-family: "Source Sans Pro", sans-serif;
@@ -368,6 +352,9 @@ width: 100%;
   margin: 0;
   outline: 0;
   box-sizing: border-box;
+
+  width: 100%;
+  font-size: 23px;
   }
 
 #imagenacercade1{
@@ -405,8 +392,18 @@ height: auto;
 #pre-footer{
   position: relative;
   background-image: linear-gradient(225deg, #c49300 0, #ffc822 16.67%, #ecb306 33.33%, #fdd048 50%, #ffdf81 66.67%, #fdd048 83.33%, #ca9800 100%);
-    min-height: 50vh;
-    font-family: 'Fredoka', sans-serif;
+  min-height: 50vh;
+  font-family: 'Fredoka', sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #0a4063;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  font-size: 23px;
 
 }
 
@@ -414,11 +411,6 @@ height: auto;
   align-items: center;
   align-content: center;
   margin-left: 3cm;
-}
-
-.footer{
-  background-image: radial-gradient(circle at 50% 66.59%, #564b42 0, #302f2d 25%, #061219 50%, #000000 75%, #000000 100%);
-
 }
 
 
@@ -445,99 +437,3 @@ height: auto;
 
   border-color: orange;
 }
-
-/*
-
-
-
-
-
-
-.section__content-right{
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
-  font-family: Aller, sans-serif;
-  line-height: 1.2;
-  font-weight: 400;
-  color: #464646;
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
-  outline: 0;
-  box-sizing: border-box;
-  position: relative;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex: 1 0 auto !important;
-  overflow: hidden;
-  min-height: 400px;
-  align-items: flex-start;
-  background-image: url(https://1faypk31ihjq3me65miz021u-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/space-bg.jpg);
-}
-
-
-
-.navbar{
-  background-color: #216FB5;
-                    498cf3
-
-/*
--webkit-font-smoothing: antialiased;
-text-size-adjust: none;
-font-family: Aller, sans-serif;
-line-height: 1.2;
-font-weight: 400;
-color: #464646;
-font-size: 16px;
-margin: 0;
-outline: 0;
-box-sizing: border-box;
-display: block;
-position: relative;
-background: #fdd048;
-padding: 50px 0;
-
-
-
--webkit-text-size-adjust: 100%;
--webkit-tap-highlight-color: rgba(0,0,0,0);
-font-family: Montserrat-Regular_0,Arial,sans-serif;
-color: #707271;
--webkit-font-smoothing: antialiased;
-font-size: 13px;
-font-weight: 400;
-box-sizing: border-box;
-position: relative;
-min-height: 1px;
-padding-right: 15px;
-padding-left: 15px;
-float: left;
-width: 100%;
-margin-top: 0;
-background-repeat: no-repeat;
-background-image: url('https://totallyweddingkoozies.com/varnish-images/Data/Media/6453b2b3-3742-488f-96b0-52d70328c81fZ_TWK_HomePage-OurProductsYourStory-BackgroundGraphic-optlossy.png?v=0');
-
-
--webkit-text-size-adjust: 100%;
--webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-font-family: "Source Sans Pro", sans-serif;
-font-size: 14px;
-line-height: 1.42857;
-color: #0a4063;
-box-sizing: border-box;
-padding: 0;
-min-height: 445px;
-height: 100%;
-max-height: 565px;
-background-color: #073f63;
-background-image: url("https://s3.amazonaws.com/topratedlocal/home_page/TRL-Footer-Illustration-Tablet.svg");
-background-position: center top;
-background-repeat: no-repeat;
-background-size: cover;
-
-*/
