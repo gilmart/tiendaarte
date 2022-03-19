@@ -6,8 +6,8 @@ export function ampliarInformacion(event){
         producto={
             foto:event.target.parentElement.querySelector("img").src,
             nombre:event.target.parentElement.querySelector("h1").textContent,
-            precio:event.target.parentElement.querySelector("h2").textContent,
-            descripcion:event.target.parentElement.querySelector("h3").textContent,
+            precio:event.target.parentElement.querySelector("h6").textContent,
+            descripcion:event.target.parentElement.querySelector("h5").textContent,
           // agregarArticulo:event.target.parentElement.querySelector("list").textContent
         }
         console.log(producto)
