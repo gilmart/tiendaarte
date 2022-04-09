@@ -1,17 +1,17 @@
 export function pintarTienda(){
     let productosBD= [
 
-        {nombre: "Zipper Bottle", precio: 7000, descripcion: "Koozie personalizados para botellas 12oz", foto: "img/koozie2.png", ranking:"img/rating4.png",  envío: "img/gratis.png"},
-        {nombre: "Can Koozie", precio: 21000, descripcion: "Tripack de koozies para latas tamaño standard", foto: "img/koozie10.png",ranking:"img/rating5.png", envío: "img/gratis.png"},
-        {nombre: "24oz Can ", precio: 12000, descripcion: "Koozie personalizados para latas tamaño 24oz", foto: "img/koozie3.png", ranking:"img/rating5.png",  envío: "img/gratis.png"},
-        {nombre: "Jersey Bottle", precio: 15000, descripcion: "Koozie personalizados para botellas tamaño standard", foto: "img/koozie4.png", ranking:"img/rating5.png",  envío: "img/gratis.png"},
-        {nombre: "Strap Can", precio: 17000, descripcion: "Koozies para latas con cinta para sostener", foto: "img/koozie7.png",ranking:"img/rating2.png",  envío: "img/gratis.png"},
-        {nombre: "Water Bottle", precio: 14000, descripcion: "Perfectos koozies para botella de agua tamaño 12oz", foto: "img/koozie9.png",ranking:"img/rating5.png", envío: ""},
+        {nombre: "Zipper Bottle", precio: "$" + 7000, descripcion: "Koozie personalizados para botellas 12oz", foto: "img/koozie2.png", ranking:"img/rating4.png",  envío: "img/gratis.png"},
+        {nombre: "Can Koozie", precio: "$" + 21000, descripcion: "Tripack de koozies para latas tamaño standard", foto: "img/koozie10.png",ranking:"img/rating5.png", envío: "img/gratis.png"},
+        {nombre: "24oz Can ", precio: "$" + 12000, descripcion: "Koozie personalizados para latas tamaño 24oz", foto: "img/koozie3.png", ranking:"img/rating5.png",  envío: "img/gratis.png"},
+        {nombre: "Jersey Bottle", precio: "$" + 15000, descripcion: "Koozie personalizados para botellas tamaño standard", foto: "img/koozie4.png", ranking:"img/rating5.png",  envío: "img/gratis.png"},
+        {nombre: "Strap Can", precio: "$" + 17000, descripcion: "Koozies para latas con cinta para sostener", foto: "img/koozie7.png",ranking:"img/rating2.png",  envío: "img/gratis.png"},
+        {nombre: "Water Bottle", precio:"$" + 14000, descripcion: "Perfectos koozies para botella de agua tamaño 12oz", foto: "img/koozie9.png",ranking:"img/rating5.png", envío: ""},
        
-        {nombre: "Can Koozie", precio: 5000, descripcion: "Koozie personalizados para latas tamaño standard", foto: "img/coolieIndex.png", ranking:"img/rating5.png", envío: ""},
-        {nombre: "Camo Can", precio: 5000, descripcion: "Koozie con impresion de camuflaje", foto: "img/koozie5.png", ranking:"img/rating4.png", envío: ""},
-        {nombre: "Round Can", precio: 6000, descripcion: "Koozie con bordes redondeados", foto: "img/koozie6.jpg",ranking:"img/rating3.png", envío: "" },
-        {nombre: "Wine Glass", precio: 20000, descripcion: "Koozies para copas de vinos", foto: "img/koozie8.png",ranking:"img/rating4.png", envío: ""},
+        {nombre: "Can Koozie", precio: "$" +5000, descripcion: "Koozie personalizados para latas tamaño standard", foto: "img/coolieIndex.png", ranking:"img/rating5.png", envío: ""},
+        {nombre: "Camo Can", precio: "$" +5000, descripcion: "Koozie con impresion de camuflaje", foto: "img/koozie5.png", ranking:"img/rating4.png", envío: ""},
+        {nombre: "Round Can", precio: "$" +6000, descripcion: "Koozie con bordes redondeados", foto: "img/koozie6.jpg",ranking:"img/rating3.png", envío: "" },
+        {nombre: "Wine Glass", precio: "$" +20000, descripcion: "Koozies para copas de vinos", foto: "img/koozie8.png",ranking:"img/rating4.png", envío: ""},
 
     ]
     
@@ -71,13 +71,12 @@ export function pintarTienda(){
         boton.classList.add("btn","btn-warning","mx-4","mb-4")
         boton.textContent="ver producto"
 
-        tarjeta.appendChild(envío)     
         tarjeta.appendChild(foto)
+        tarjeta.appendChild(envío)     
         tarjeta.appendChild(titulo)
         tarjeta.appendChild(precio)
         tarjeta.appendChild(ranking)
         tarjeta.appendChild(descripcion)
-      //  tarjeta.appendChild(agregarArticulo)
         tarjeta.appendChild(boton)
         columna.appendChild(tarjeta)
         fila.appendChild(columna)

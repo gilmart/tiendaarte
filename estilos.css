@@ -6,7 +6,7 @@
 
 body{
  background-color: e4e2e1;
- font-family: "Source Sans Pro";
+ font-family: "Source Sans Pro ";
  
 }
 
@@ -125,6 +125,8 @@ a:hover, a:focus {
   padding: 3px 0;
 }
 
+.icono{
+}
 
 /* TIENDA CARRUSEL INDEX */
 #productosIndex{
