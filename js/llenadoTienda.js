@@ -1,4 +1,5 @@
 export function pintarTienda(){
+
     let productosBD= [
 
         {nombre: "Zipper Bottle", precio: "$" + 7000, descripcion: "Koozie personalizados para botellas 12oz", foto: "img/koozie2.png", ranking:"img/rating4.png",  envío: "img/gratis.png"},

@@ -4,390 +4,308 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
+    <title>Home</title>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--ANIMATED-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="estilos1.css">
+    <!--ICONOS DE BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
---<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
-
- -->
-
-<!--Bootstrap-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<!--ANIMATED-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-<!--GOGOLE FONTS-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
-<!--ESTILOS-->
-<link rel="stylesheet" href="estilos.css">
-<!--PRODUCTOS DEL INDEX-->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-<!--ICONOS DE BOOTSTRAP-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-
-
-  </head>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
 <body>
-  <header>
-    <div class ="alternate-header-top">
-      <nav class="navbar navbar-expand-sm bg-lg navbar-lg animate__animated animate__fadeInLeftBig">
-       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="img/logoGilma CN-01.png" alt="logobarra" width="90" height="90">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      <div class="justify-right">
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Empresa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tienda.html">Tienda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tienda.html">Fotos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tienda.html">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tienda.html">
-                <i class="bi bi-cart4" width="35" height="35"></i> 
-              </a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="img/user.png" alt="usuario" width="32" height="32" class="rounded-circle">
-                Ingresa
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
-                <li><a class="dropdown-item" href="#">Registrarse</a></li>
-                <hr>
-                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-    </nav>
-  </div>
- 
-</header>
-
- <!--BARRA PEQUEÑA DE ENVIOS GRATIS -->
- <section>
-   <div class="elementor-column animate__animated animate__fadeInRightBig">
-       <h5>¿Buscas productos flash? ¡Paga HOY y recibe MAÑANA!</h5>
-   </div>
-  </section>
- 
-  <!--BANNER-->
-
-  <main>
-      <div id="carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" ></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></button>
-          </div>
-
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="1000">
-              <img src="img/banner1.6.jpg" class="d-block w-100  " alt="..." >
-              
-              
-              <div class="carousel-position-six text-uppercase text-center">
-                <h1 class="margin-bottom-20 animate__animated animate__fadeInDown" data-animation="animated fadeInDown">
-                  PERSONALIZA TU DISEÑO
-                  <br/>
-                  <span class="carousel-title-normal">MAS RÁPIDO</span>
-                </h1>
-                <p class="carousel-subtitle-v5 border-top-bottom margin-bottom-60 animate__animated animate__fadeInUp" >TIENDA #1 EN LA WEBSITE</p>
+    <!--BARRA-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg animate__animated animate__backInLeft">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tienda.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link bi bi-cup-straw" href="#"></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                      Ingresa
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Ingresar</a></li>
+                      <li><a class="dropdown-item" href="#">Registrarse </a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Salir</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
-            
-            
-
-          <div class="carousel-item" data-bs-interval="2000">
-              <img src="img/banner2.6.jpg" class="d-block w-100  " alt="...">
-              <div class="carousel-position-six text-uppercase text-center">
-                <h1 class="margin-bottom-20 margin-bottom-20 animate__animated animate__fadeInDown carousel-title-v5" data-animation="animated fadeInDown">
-                 Mas de 10 productos diferentes para tus bebidas
-                  <br/>
-                  <span class="carousel-title-normal">alta calidad</span>
-                </h1>
-                <p class="carousel-subtitle-v5 border-top-bottom margin-bottom-30 animate__animated animate__fadeInUp" data-animation="animated fadeInDown">Clic aquí y compra ahora.</p>
+          </nav>
+    </header>
+    <!--BARRA DE ABAJO-->
+    <section class="barraRush">
+        <h5>PIDE HOY RECIBE MAÑANA</h5>
+    </section>
+    <!--BANNER-->
+    <main class="banner">
+        <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" ></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" ></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="6000" id="banner1">
+                <img src="img/koozie1Banner.png" class="d-block w-50 larger" alt="imagen1" id="imagen1" >
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="animate__animated animate__backInDown textotitulobanner">PERSONALIZA CON TU DISEÑO FAVORITO</h3>
+                  <p class="textosubtitulobanner">Ayuda a tus amigos a que tengan los suyos hoy. Nuevos Tripacks disponibles</p>
+                </div>
               </div>
-          </div>
 
-          <div class="carousel-item" data-bs-interval="2000">
-              <img src="img/banner3.6.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-position-six text-uppercase text-center">
-                <h1 class="margin-bottom-20 animate-delay carousel-title-v5 animate__animated animate__fadeInDown" data-animation="animated fadeInDown">
-                  Disfruta con tus familiares y amigos
-                  <br/>
-                  <span class="carousel-title-normal">cada día</span>
-                </h1>
-                <p class="carousel-subtitle-v5 border-top-bottom margin-bottom-30 animate__animated animate__fadeInUp" data-animation="animated fadeInDown">Compra hoy y recibe mañana.</p>
+              <div class="carousel-item" data-bs-interval="6000" id="banner2">
+                <img src="img/koozie4Banner.png" class="d-block w-50 larger" alt="banner2" id="imagen2"> 
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="animate__animated animate__backInDown textotitulobanner">COMPRA HOY Y RECIBE MAÑANA</h3>
+                  <p class="textosubtitulobanner">Productos populares perfectos para el verano. Diseño versatil y de alta calidad</p>
+                </div>
               </div>
-          </div>
-        </div>
-
-
-    </div>
-</main>
-
-<section id="productosIndex">
-   <div class="container" id="contenedorProductos">
-    <h2 class="productosTitulo">PRODUCTOS  POPULARES</h2> <hr>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-container mySwiper">
-         
-            <div class="swiper-wrapper ">
-                <div class="swiper-slide">
-                    <img src="img/coolieIndex.png"
-                        alt="">
-                    <div class="card-description">
-                        <div class="card-title">
-                            <h4>Can Koozie</h4>
-                        </div>
-                        <div class="card-text">
-                            <p>Koozie personalizados para latas tamaño standard, 12OZ y 8oz. </p>
-                        </div>
-                        <div class="card-link">
-                          <a href="tienda.html">Ver más</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/koozie3.png"
-                        alt="">
-                    <div class="card-description">
-                        <div class="card-title">
-                            <h4>24oz Can </h4>
-                        </div>
-                        <div class="card-text">
-                            <p>Koozie personalizados para latas tamaño 24oz y 32oz. Colores disponbles. </p>
-                        </div>
-                        <div class="card-link">
-                          <a href="tienda.html">Ver más</a>
-                        </div>
-                </div>
-            </div>
-                <div class="swiper-slide">
-                    <img src="img/koozie8.png"
-                    alt="">
-                <div class="card-description">
-                    <div class="card-title">
-                        <h4>Wine Glass</h4>
-                    </div>
-                    <div class="card-text">
-                        <p>Koozies para copas de vinos ideal para conservar la temperatura</p>
-                    </div>
-                    <div class="card-link">
-                      <a href="tienda.html">Ver más</a>
-                    </div>
-                </div>
-            </div>
-                <div class="swiper-slide">
-                    <img src="img/koozie7.png"
-                    alt="">
-                <div class="card-description">
-                    <div class="card-title">
-                        <h4>Strap Can</h4>
-                    </div>
-                    <div class="card-text">
-                        <p>Koozies para latas con cinta para sostener, ajustable y de alta calidad</p>
-                    </div>
-                    <div class="card-link">
-                      <a href="tienda.html">Ver más</a>
-                    </div>
-                </div>
-            </div>
-                
-             
-            </div>
-                </div>
+              <div class="carousel-item" data-bs-interval="6000" id="banner3">
+                <img src="img/koozie7Banner.png" class="d-block w-50 larger" alt="banner3" id="imagen3">
+               <div class="carousel-caption d-none d-md-block">
        
-            </div>
-         
-         
 
-        </div>
-
-    </div>
-</section>
-
-<!-- EMPRESA -->
-<section class="section-module">
-  <div class="section-module__row mt-5">
-    <div class="section__content-left">
-        <div class="section__content-inner">
-            <h2>Empresa ¿Quienes Somos?</h2><hr><br>
-            <p>Érase una vez en un hermoso estado con un grupo de amigos cerca de un tramo sereno de la costa, nació la idea de crear un negocio de personalización de KOOZIE y productos coolie. </p>
-            <p> Los amigos se consideraron increíblemente divertidos y creativos y pensaron que un COOLIE o KOOZIE personalizado sería tan delicioso de diseñar y tan útil para todos, que tendrían toda la suerte del mundo para sacar adelante este nuevo proyecto y negocio. 3 estados, 5 países e innumerables mudanzas después, ¡por fin están en la onda! </p>
-            <p>Y para responder a tu pregunta candente, no, ninguno de sus diseños iniciales se vendió bien ni terminó siendo muy divertido para nadie más que para ellos mismos. Pero, ¿no es eso parte de la diversión de crear tu propio diseño de coolie personalizado?</p>
-        </div>
-      </div>
-
-    <div class="section__content-right">
-      <div class="section__content-inner">
-        <div class="section__floating">
-          <img src="./img/koozieEmpresa.png" class="attachment-crb-column-floating size-crb-column-floating" alt="" >
-        </div>
-      </div>
-    </div>
-
-    </div>
-  </div>
-
-</section>
-
-<!-- BANNER FONDO -->
-
-<section class="fondobanner img-fluid w-100"></section>
-
-<!-- ACERCA DE -->
-<section class="u-padless-lr">
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-6 align-self-center">
-              <h2>Acerca de</h2>
-            <p>
-              Más de un año de experiencia en: - HTML5 - CSS3 + Bootstrap + Javascript + Jquery + PHP + Symfony.  Especialista en diseñar una landig page moderna, efectiva y en simples pasos.
-            </p>
-            <p>
-             Contamos con la experiencia en  desarrollar aplicaciones , sistemas , reportes y soluciones TI a la medida y necesidad del usuario.
-            Teniendo en cuenta siempre, ayudar a hacer tus ideas realidad de la manera más creativa y comprometido 100% con mí trabajo, recuerda que todas las grandes empresas empezaron con una idea como la tuya.
-            </p>
-            <p>
-              El objetivo es se basa en los 5 pilares de la experiencia del cliente y se ha creado para potenciar tanto a las empresas como a los consumidores. La captura de la experiencia global del cliente es diferente a todo lo que hay en el mercado.
-            </p>
-      </div>
-        
-      <div class="col-2 mt-4" id="imagenacercade1">
-          <img src="img/top5.svg" alt="" class="img-fluid">
-      </div>
-       <div class="col-2 mt-4" id="imagenacercade2">
-            <img src="img/top1.svg" alt="" class="img-fluid"> 
-       </div>
-       <div class="col-2 mt-4" id="imagenacercade3">
-        <img src="img/top1.svg" alt="" class="img-fluid"> 
-   </div>
-   
-    </div>
-  </div>
-</section>
-
-
-
-<!--PRE FOOTER -->
-
-<section>
-  <footer id="pre-footer">
-    <div class="container">
-
-            <div class="custom-shape-divider-top-1646957841">  
-               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                  <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                  <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                  <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-                </svg>
-            </div>
-
-            <div class="row">
-                  <div class="col-md-4 col-sm-2 mt-5">
-                    <div class=" mt-5">
-                    <h2 class="productosTitulo">Acerca de</h2>  </div>
-                    <p>   El objetivo es se basa en los 5 pilares de la experiencia del cliente y se ha creado para potenciar tanto a las empresas como a los consumidores. La captura de la experiencia global del cliente es diferente a todo lo que hay en el mercado.</p>
-                  </div>
-
-                  <div class="col-md-4 col-sm-2 mt-5" id="informacionFooter">
-                    <div class=" mt-5">
-                    <h2 class="productosTitulo">Contactanos</h2></div>
-                    
-                    <br>Telefono:<a href="333225511">33225511</a>
-                        <br>Email: <a href="email@email.com">desarrollador@email.com</a>
-                        <br>Skype: <a href="skype:skype">desarrollador:skype </a> 
-                        
-                        <div>
-                            <h2 class="productosTitulo">Suscribete</h2>
-                              <p>Subscribete y recibes actualizaciones</p>
-                                  <form action="#">
-                                      <div class="input-group col-md-1 col-sm-5">
-                                      <input type="text" placeholder="youremail@mail.com" class="form-control">
-                                        <span class="input-group-btn">
-                                        <button class="btn btn-primary" type="submit">Subscribe</button>
-                                        </span>
-                                      </div>
-                                  </form>
-                          </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-2 mt-5">
-                      <div class=" mt-5">
-                      <h2 class="productosTitulo">Siguenos</h2>  </div>
-                        <div class="col-md-4 col-sm-4 mt-5">
-                          <ul id="redes" height="32">
-                            
-                            <li><i class="fa fa-linkedin"></i></a></li>
-                            <li><i class="fa fa-facebook"></i></a></li>
-                            <li><i class="fa fa-twitter"></i></a></li>
-                            <li><i class="fa fa-skype"></i></a></li>
-                            <li><i class="fa fa-github"></i></a></li>
-                            <li><i class="fa fa-youtube"></i></a></li>
-                                     
-                          </ul>
-                        </div>
-                      </div>
+                  <h3 class="animate__animated animate__backInDown textotitulobanner">LA TIENDA #1 PARA TUS PORTALATAS</h3>
+                  <p class="textosubtitulobanner">Celebra tus mejores mmomentos con nosotros. Se el más cool de tu fiesta con un portalatas personalizado</p>
                 </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
+    <!--TEXTO-IMAGEN-->
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-6 align-self-center">
+                  <hr class="barrahr">
 
+                    <h4>Texto de Presentación</h4>
+                    <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, vel esse minus, blanditiis molestias quis beatae quidem doloribus illum officia dolorum hic quos nam culpa amet debitis maxime tempore molestiae nulla atque. Vitae, fugit voluptates itaque excepturi aut magnam ut, fugiat consectetur amet corporis odit dicta. Vel nihil accusantium, animi quos eos aspernatur sit amet perferendis quas nam, impedit, eius voluptatum saepe.</p>
+
+                    <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+                        Registrate
+                    </button>      <hr class="barrahr">
+
+                </div>
+                <div class="col-6 mb-5">
+                    <img src="img/koozieEmpresa.png" alt="" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FONDO FIJO-->
+    <section class="fondomovil">
+    </section>
+    <!--TEXTO PRESENTACION BATMAN-->
+    <section>
+        <div class="container mt-5 mb-5 textobatman">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <h4>Texto Presentación Batman</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ab laudantium est cupiditate, officiis nostrum nam! Distinctio, nam voluptate architecto dignissimos neque, quos cum quae dolor, nemo ducimus aspernatur illo animi non. Dolor, praesentium. Neque voluptas voluptatum natus facilis nam cum eius corporis vero ut quibusdam minima laboriosam suscipit perferendis similique cumque repellendus maiores a distinctio, corrupti, illo quam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CANVA-->
+    <section>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <form>
+                <div class="mb-3">
+                <label class="form-label">Correo</label>
+                <input type="text" class="form-control" id="correo">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">password</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+                <button type="submit" class="btn btn-primary" id="botonregistro"> ENVIAR</button>
+              </form>
+              
+            </div>
+          </div>
+    </section>
+<!--ABOUT-TEXTO-IMAGEN-->
+<section>
+    <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-3  mb-5 ">
+                    <img src="img/top1.svg" alt="" class="img-fluid w-100">
+                  </div>
+                  <div class="col-3 mb-5">
+                    <img src="img/top5.svg" alt="" class="img-fluid w-100">
+                  </div>
+                
+            <div class="col-6 col-md-6 col-sm-1 mb-5 ">
+                <h4>Acerca de</h4>
+                <p class="mt-3">El objetivo es se basa en los 5 pilares de la experiencia del cliente y se ha creado para potenciar tanto a las empresas como a los consumidores. La captura de la experiencia global del cliente es diferente a todo lo que hay en el mercado. </p>
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+                    Registrate
+                </button>
+            </div>
+          
+        </div>
+    </div>
+</section>
+<!--CLIENTES-->
+<section class="barradeclientes mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+          <h1 class="numerosbarra fa-bounce">+45</h1>
+          <p class="barra">Productos</p>
       </div>
-    </footer>
+
+      <div class="col-md-4">
+        <i class="fa-brands fa-amazon fa-beat numerosbarra"></i>        
+        <p class="amazon">Encuentranos en Amazon</p>
+      </div>
+
+      <div class="col-md-4">
+        <h1 class="numerosbarra fa-bounce">+20,000</h1>
+        <p class="barra">Clientes Satisfechos</p>
+      </div>
+    </div>
+
+  </div>
 </section>
 
+<!--CTA-->
+
+<div class="cta">
+  <h5>They don’t call us The Original Chill™ for Nothing.</h5>
+  <h4  class="ctatext">See how we do.</h4>
+</div>
+<!--FOOTER-->
+<section >
+  <footer>
+    <div class="container-fluid">
+
+      <div class="custom-shape-divider-top-1650315454">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+     </div>
+
+     <div class="row">
+        <div class="col-md-4 col-sm-2 mt-5">
+          <div class=" mt-5">
+            <h2 class="productosTitulo">Acerca de</h2>  
+          </div>
+          <p>El objetivo es se basa en los 5 pilares de la experiencia del cliente y se ha creado para potenciar tanto a las empresas como a los consumidores. </p>
+        </div>
+
+        <div class="col-md-4 col-sm-2 mt-5">
+          <div class=" mt-5">
+            <h2>Contactanos</h2>
+          </div>
+            <ul>
+              <li>Telefono:<a href="333225511">(+57)319-323-6759</a></li>
+              <li>Email: <a href="email@email.com">mgilma018@gmail.com</a></li>
+              <li>Skype: <a href="skype:gilmalu">gilmalu:skype </a> </li>
+            </ul> 
+          </div>
+
+            <div class="col-4 col-md-2 col-sm-2 mt-5">
+              <div class=" mt-5">
+              <h2 class="titulofooter">Promociones</h4>
+              </div>
+                <ul class>
+                  <li><a href>Gift Card</a></li>
+                  <li><a href>Mas Vendidos</a></li>
+                  <li><a href>Acerca de </a></li>
+                  <li><a href>Guía de Latas<a href></a></li>
+                  <li><a href>Blogs</a></li>
+                </ul>
+            </div>
+      </div>
+
+      <hr>
+
+     <div class="container">
+      <div class="row">
+       <div class="col-6 col-md-6 col-sm-2 mt-5  ">
+         <h2 class="productosTitulo">Siguenos</h2>  
+           <ul class="col-6 iconos ">
+            <a href><i class="bi bi-youtube " ></i></a> 
+            <a href><i class="bi bi-pinterest"></i></a> 
+            <a href><i class="bi bi-linkedin"></i></a> 
+            <a href><i class="bi bi-instagram"></i></a> 
+            <a href><i class="bi bi-meta"></i></a> 
+             
+           </ul>
+       </div>
+
+        <div class="col-5 col-md-5 col-sm-2 mt-5">
+         <h3 class="productosTitulo">Suscribete y recibe un 8% de descuento</h3>
+             <form action="#">
+                 <div class="input-group col-md-1 col-sm-5">
+                 <input type="text" placeholder="youremail@mail.com" class="form-control">
+                   <span class="input-group-btn">
+                   <button class="btn btn-primary" type="submit">Subscribe</button>
+                   </span>
+                 </div>
+             </form>
+        </div>
  
-<!--
-  
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      </div>
+    </div>
+    </div>
+    
+  </footer>
+</section>
+
+<!--POSTFOOTER-->
+<section class="postfooter">
+    <h5>Derechos Reservados 2022®</h5>
+</section>  
+
+<script src="js/registro.js" type="module"></script>
+<script src="js/firebase.js" type="module"></script>
  
- COMENTAR, NO DEJA Q SE DESPEGUE EL DROPDOWN
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-<script src="js/llenadotienda.js"></script>
-  <script src="js/carrusel.js"></script> 
---> 
-<!--ICONOS-->
-<script src="https://kit.fontawesome.com/a5d068fb80.js" crossorigin="anonymous"></script>
 
-<!--SCRIPT DE BOOTSTRAP-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
-<!--SCRIPTS PRODUCTOS INDEX-->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
-<!--SCRIPT DE JS-->
-<script src="app.js"></script>
-
-</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>

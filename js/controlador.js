@@ -25,7 +25,7 @@ boton.addEventListener('click', function(event){
 
 
     let cantidad=document.getElementById("cantidadProducto").value
-    producto.cantidad=cantidad    
+    producto.cantidad=cantidad   
     carrito.push(producto)
 
     let suma=0
@@ -74,18 +74,31 @@ botonCarrito.addEventListener('click', function(evento){
     foto.classList.add("img-fluid" , "w-100")
     foto.src=producto.foto
 
+    let nombre=document.createElement("h4")
+    nombre.classList.add("text-center")
+    nombre.textContent=producto.nombre
 
+    let cantidad=document.createElement("h6")
+    cantidad.classList.add("text-center")
+    cantidad.textContent="Cantidad de articulos: "+producto.cantidad
 
-    columna1.appenChild(foto)
-    fila.appenChild(columna1)
-    fila.appenChild(columna2)
+    let precio=document.createElement("h6")
+    precio.classList.add("text-center")
+    precio.textContent = "Precio: " +producto.precio*producto.cantidad
+
+    columna1.appendChild(foto)
+    fila.appendChild(columna1)
+    fila.appendChild(columna2)
+
+    columna2.appendChild(nombre)
+    columna2.appendChild(cantidad)
+    columna2.appendChild(precio)
+
     contenedor.appendChild(fila)
 
 })
 
     modalVenta.show()
-
-  
 
 
 })
