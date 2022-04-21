@@ -5,3 +5,4 @@ export function pintarCarrito(suma){
     capsula.classList.remove("invisible")
 
 }
+

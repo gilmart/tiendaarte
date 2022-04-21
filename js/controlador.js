@@ -1,6 +1,7 @@
 import { pintarTienda } from "./llenadoTienda.js";
 import {ampliarInformacion} from "./ampliarInfo.js";
 import { pintarCarrito } from "./pintarCarrito.js";
+import {valormodaluno} from "./modalenuno.js";
 
 let producto
 pintarTienda()
@@ -10,11 +11,13 @@ let modalinfoproducto
 let contenedorTienda=document.getElementById("fila")
 contenedorTienda.addEventListener("click",function(event){
 
+
     if (event.target.classList.contains("btn")){
     modalinfoproducto = new bootstrap.Modal(document.getElementById('modalinfoproducto'))
 
     producto=ampliarInformacion(event)
     modalinfoproducto.show()
+
     }
 })
 
@@ -27,7 +30,7 @@ boton.addEventListener('click', function(event){
     let cantidad=document.getElementById("cantidadProducto").value
     producto.cantidad=cantidad   
     carrito.push(producto)
-
+   
     let suma=0
     carrito.forEach(function(producto){
 
@@ -36,7 +39,11 @@ boton.addEventListener('click', function(event){
 
     pintarCarrito(suma)
     modalinfoproducto.hide()
+    document.getElementById("cantidadProducto").value = "1";
+
+
 })
+
 
 let limpiarCarrito = document.getElementById("limpiar")
 limpiarCarrito.addEventListener("click", function(evento){
