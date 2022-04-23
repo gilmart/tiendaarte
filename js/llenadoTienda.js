@@ -15,6 +15,8 @@ export function pintarTienda(){
         {nombre: "Wine Glass", precio: "$" +20000, descripcion: "Koozies para copas de vinos", foto: "img/koozie8.png",ranking:"img/rating4.png", envío: ""},
 
     ]
+
+      
     
 
         //console.log(productosBD)

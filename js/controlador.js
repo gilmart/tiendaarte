@@ -6,8 +6,6 @@ let producto
 pintarTienda()
 let modalinfoproducto
 
-
-
 let contenedorTienda=document.getElementById("fila")
 contenedorTienda.addEventListener("click",function(event){
 
@@ -35,21 +33,19 @@ boton.addEventListener('click', function(event){
     carrito.forEach(function(producto){
 
         suma=suma+Number(producto.cantidad)
-    })
+   })
 
     pintarCarrito(suma)
     modalinfoproducto.hide()
     document.getElementById("cantidadProducto").value = "1";
 
+     //CONVERTIR PRODUCTO.PRECIO EN NUMBER//
+    let precio
+    precio = Number(producto.precio)
+    console.log(producto.precio)
+
 
 })
-
-//
- 
-
-    
-//
-
 
 
 let limpiarCarrito = document.getElementById("limpiar")
@@ -61,15 +57,18 @@ limpiarCarrito.addEventListener("click", function(evento){
     capsula.classList.add("invisible")
 
     modalinfoproducto.hide()
-
 })
 
 
+
+
+//
 let botonCarrito= document.getElementById("botonCarrito")
 botonCarrito.addEventListener('click', function(evento){
 
     let contenedor = document.getElementById("contenedorVenta")
     let modalVenta = new bootstrap.Modal(document.getElementById('resumenCarrito'))
+ 
 
 
     contenedor.innerHTML=""
@@ -93,13 +92,15 @@ botonCarrito.addEventListener('click', function(evento){
     nombre.classList.add("text-center")
     nombre.textContent=producto.nombre
 
-    let cantidad=document.createElement("h6")
+    let cantidad=document.createElement("h5")
     cantidad.classList.add("text-center")
     cantidad.textContent="Cantidad de articulos: "+producto.cantidad 
 
 
-    let precio=document.createElement("h5")
-    precio.textContent= producto.precio*2
+    let precio=document.createElement("h6")
+    console.log(Number(producto.precio.split("$")[1]))
+    console.log(Number(producto.precio))
+    precio.textContent= "precio: " +Number(producto.precio.split("$")[1])* producto.cantidad
 
  
 
