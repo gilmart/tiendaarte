@@ -2,7 +2,7 @@ export function pintarTienda(){
 
     let productosBD= [
 
-        {nombre: "Zipper Bottle", precio: "$" + 7000, descripcion: "Koozie personalizados para botellas 12oz", foto: "img/koozie2.png", ranking:"img/rating4.png",  envío: "img/gratis.png"},
+        {nombre: "Zipper Bottle", precio: "$" +7000, descripcion: "Koozie personalizados para botellas 12oz", foto: "img/koozie2.png", ranking:"img/rating4.png",  envío: "img/gratis.png"},
         {nombre: "Can Koozie", precio: "$" + 21000, descripcion: "Tripack de koozies para latas tamaño standard", foto: "img/koozie10.png",ranking:"img/rating5.png", envío: "img/gratis.png"},
         {nombre: "24oz Can ", precio: "$" + 12000, descripcion: "Koozie personalizados para latas tamaño 24oz", foto: "img/koozie3.png", ranking:"img/rating5.png",  envío: "img/gratis.png"},
         {nombre: "Jersey Bottle", precio: "$" + 15000, descripcion: "Koozie personalizados para botellas tamaño standard", foto: "img/koozie4.png", ranking:"img/rating5.png",  envío: "img/gratis.png"},
@@ -52,8 +52,7 @@ export function pintarTienda(){
 
         let precio=document.createElement("h6")
         precio.classList.add("text-center")
-        precio.textContent=producto.precio
-
+        precio.textContent= producto.precio
         
         let descripcion=document.createElement("h5")
         descripcion.classList.add("text-center")

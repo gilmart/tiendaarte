@@ -1,12 +1,12 @@
 import { pintarTienda } from "./llenadoTienda.js";
 import {ampliarInformacion} from "./ampliarInfo.js";
 import { pintarCarrito } from "./pintarCarrito.js";
-import {valormodaluno} from "./modalenuno.js";
 
 let producto
 pintarTienda()
-
 let modalinfoproducto
+
+
 
 let contenedorTienda=document.getElementById("fila")
 contenedorTienda.addEventListener("click",function(event){
@@ -44,6 +44,13 @@ boton.addEventListener('click', function(event){
 
 })
 
+//
+ 
+
+    
+//
+
+
 
 let limpiarCarrito = document.getElementById("limpiar")
 limpiarCarrito.addEventListener("click", function(evento){
@@ -64,6 +71,7 @@ botonCarrito.addEventListener('click', function(evento){
     let contenedor = document.getElementById("contenedorVenta")
     let modalVenta = new bootstrap.Modal(document.getElementById('resumenCarrito'))
 
+
     contenedor.innerHTML=""
     
     carrito.forEach(function(producto){
@@ -81,17 +89,19 @@ botonCarrito.addEventListener('click', function(evento){
     foto.classList.add("img-fluid" , "w-100")
     foto.src=producto.foto
 
-    let nombre=document.createElement("h4")
+    let nombre=document.createElement("h3")
     nombre.classList.add("text-center")
     nombre.textContent=producto.nombre
 
     let cantidad=document.createElement("h6")
     cantidad.classList.add("text-center")
-    cantidad.textContent="Cantidad de articulos: "+producto.cantidad
+    cantidad.textContent="Cantidad de articulos: "+producto.cantidad 
 
-    let precio=document.createElement("h6")
-    precio.classList.add("text-center")
-    precio.textContent = "Precio: " +producto.precio*producto.cantidad
+
+    let precio=document.createElement("h5")
+    precio.textContent= producto.precio*2
+
+ 
 
     columna1.appendChild(foto)
     fila.appendChild(columna1)
