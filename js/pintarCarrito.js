@@ -6,3 +6,6 @@ export function pintarCarrito(suma){
 
 }
 
+export function limpiarformulario(){
+    document.getElementById("formulario").reset();
+}

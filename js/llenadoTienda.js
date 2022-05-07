@@ -48,15 +48,15 @@ export function pintarTienda(){
         ranking.classList.add("col-3")
         ranking.src=producto.ranking
 
-        let titulo=document.createElement("h1")
+        let titulo=document.createElement("h3")
         titulo.classList.add("text-center")
         titulo.textContent=producto.nombre
 
-        let precio=document.createElement("h6")
+        let precio=document.createElement("h5")
         precio.classList.add("text-center")
         precio.textContent= producto.precio
         
-        let descripcion=document.createElement("h5")
+        let descripcion=document.createElement("p")
         descripcion.classList.add("text-center")
         descripcion.textContent=producto.descripcion
         descripcion.hidden=producto.descripcion

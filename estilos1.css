@@ -76,17 +76,24 @@ h4{
    border-color: #216FB5;
    color:#216FB5;
    align-self:flex-start;
+   transition: 0.5s;
    
 }
-
 .btn:hover{
     background-color: #23A455;
     color: #ffffff ;
     border-color: #00d084;
 }
 
+
+
+
+
 .fondomovil{
-    background-image: url(img/BlankCooliesUSA.com-Banner-3.0.jpg    );
+    /*background-image: url(img/BlankCooliesUSA.com-Banner-3.0.jpg    );
+        background-image: url(img/fondomovil3.jpg );
+*/
+    background-image: url(img/fondomovil1.jpg );
     background-attachment: fixed;
     height: 400px;
     background-position: center center;
@@ -157,8 +164,6 @@ h4{
     font-family: 'Ubuntu', sans-serif;
 
 }
-
-
 
 .textosubtitulobanner{
     margin-left: 55%;
@@ -247,6 +252,7 @@ h4{
 footer{
     position: relative; 
     background-color: rgb(253, 208, 72, 1); 
+    font-weight: bolder;
 }
 
 .iconos{
@@ -340,4 +346,53 @@ text-align: center;
 .barrahr{
     color: #00AFF0;
 }
+.barrahrproductos{
+    margin: auto;
+    color: #00AFF0;
+}
 
+.card{
+    display: flex;
+    width: 16rem;   
+    height: auto; 
+}
+
+.ingreso{
+    background-color: #FFDEE9;
+    background-image: -webkit-linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    background-image: -moz-linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    background-image: -o-linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    
+    
+}
+
+.registro{
+    background-color: #FAACA8;
+    background-image: -webkit-linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    background-image: -moz-linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    background-image: -o-linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+}
+
+.informativo{
+background-color: #85FFBD;
+background-image: -webkit-linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+background-image: -moz-linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+background-image: -o-linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+
+.estrellas{
+width: 200px;
+display: block;
+margin: 0px auto;
+
+
+}
+ .acercade{
+    font-weight: lighter;
+    text-align: justify;
+    font-size: 20px;
+ }
